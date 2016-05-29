@@ -1,0 +1,33 @@
+
+public class tijdstip {
+	private int uren;
+	private int min; 
+	private int sec;
+	
+	public tijdstip(){
+		this(2, 3, 4 ) ;
+	}
+	public int getUren() {
+		return uren;
+	}
+	public void setUren(int uren) {
+		this.uren = uren;
+	}
+	public int getMin() {
+		return min;
+	}
+	public void setMin(int min) {
+		this.min = min;
+	}
+	public int getSec() {
+		return sec;
+	}
+	public void setSec(int sec) {
+		this.sec = sec;
+	} 
+	public String toString(){
+		return String.format("%02d-%02d-%4d", 
+						getUren. getMin. getSec() );
+	}
+	
+}

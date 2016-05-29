@@ -1,0 +1,5 @@
+1456482648440	Rename package 'Score'
+1456483707795	Encapsulate field 'highScore'
+1456483724991	Encapsulate field 'gemiddeldeScore'
+1456483736245	Encapsulate field 'Score'
+1456483741840	Encapsulate field 'averageScore'

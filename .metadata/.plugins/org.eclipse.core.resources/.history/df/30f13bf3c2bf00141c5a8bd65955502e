@@ -1,0 +1,116 @@
+package KrosiPack;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import java.awt.CardLayout;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+import javax.swing.border.MatteBorder;
+
+public class KrosiApp {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					KrosiApp window = new KrosiApp();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public KrosiApp() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 648, 500);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new CardLayout(0, 0));
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(0, 204, 204));
+		panel.setForeground(Color.BLACK);
+		frame.getContentPane().add(panel, "name_31936213632420");
+		panel.setLayout(null);
+		
+		JLabel lblWelcome = new JLabel("");
+		lblWelcome.setIcon(new ImageIcon(KrosiApp.class.getResource("/KrosiPack/foto/HeaderHome.png")));
+		lblWelcome.setForeground(new Color(0, 0, 0));
+		lblWelcome.setFont(new Font("URW Bookman L", Font.BOLD, 30));
+		lblWelcome.setBounds(121, 29, 355, 71);
+		panel.add(lblWelcome);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton.setBackground(new Color(0, 204, 204));
+		btnNewButton.setBorder(null);
+		btnNewButton.setIcon(new ImageIcon(KrosiApp.class.getResource("/KrosiPack/foto/logo.png")));
+		btnNewButton.setBounds(97, 112, 407, 264);
+		panel.add(btnNewButton);
+		
+		JButton btnStart = new JButton("PLAY");
+		btnStart.setBackground(new Color(0, 204, 204));
+		btnStart.setFont(new Font("Avdira", Font.PLAIN, 18));
+		btnStart.setBounds(242, 388, 136, 32);
+		panel.add(btnStart);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(0, 204, 255));
+		frame.getContentPane().add(panel_1, "name_39530493789492");
+		panel_1.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Kleding voor je HOOFD ");
+		lblNewLabel.setFont(new Font("Purisa", Font.BOLD, 23));
+		lblNewLabel.setBounds(145, 36, 330, 36);
+		panel_1.add(lblNewLabel);
+		
+		JButton btnNewButton_2 = new JButton("");
+		btnNewButton_2.setBackground(new Color(0, 204, 255));
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton_2.setIcon(new ImageIcon(KrosiApp.class.getResource("/KrosiPack/foto/hoed1.png")));
+		btnNewButton_2.setBounds(227, 107, 170, 241);
+		btnNewButton_2.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		panel_1.add(btnNewButton_2);
+		
+		JButton btnNewButton_3 = new JButton("");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_3.setBackground(new Color(0, 204, 255));
+		btnNewButton_3.setIcon(new ImageIcon(KrosiApp.class.getResource("/KrosiPack/foto/muts1.png")));
+		btnNewButton_3.setBounds(446, 107, 170, 241);
+		btnNewButton_3.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		panel_1.add(btnNewButton_3);
+	}
+}

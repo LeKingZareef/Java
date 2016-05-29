@@ -1,0 +1,29 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class tijdstippaneel extends JFrame {
+
+	public static void main( String[] args )
+	{
+
+		JFrame frame = new tijdstippaneel();
+		frame.setSize(450, 230);;
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("App");
+		frame.setContentPane(new App());
+		frame.setVisible(false);
+			
+	}
+}
+
+class App extends JPanel{
+	private tijdstip time;
+	
+	public App(){
+		time = new tijdstip(1,2,3);
+		
+		System.out.println("Uren in " + time.getUren());
+		System.out.println("Seconden in " + time.getSec());
+		System.out.println("Minuten in " + time.getMin());
+	}
+}
