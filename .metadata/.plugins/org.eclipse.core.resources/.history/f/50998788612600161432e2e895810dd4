@@ -1,0 +1,11 @@
+import javax.swing.JPanel;
+import java.util.*;
+
+public class Adress extends JPanel{
+	
+	public Adress() {
+		MailList list = new MailList();
+		list.voegtoe("Kwaai");
+		list.show();
+	}
+}

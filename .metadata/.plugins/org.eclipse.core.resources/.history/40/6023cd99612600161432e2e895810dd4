@@ -1,0 +1,15 @@
+import javax.swing.JPanel;
+import java.util.*;
+
+public class Adress extends JPanel{
+	
+	public Adress() {
+		MailList list = new MailList();
+		list.voegtoe("name : NATIN" + "street: Leysweg");
+		list.voegtoe("street: Leysweg");
+		list.voegtoe("city: Paramaribo");
+		list.voegtoe("state :  Suriname");
+		list.voegtoe("ZIP CODE: 55142Zip");
+		list.show();
+	}
+}

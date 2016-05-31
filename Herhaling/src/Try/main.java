@@ -97,6 +97,9 @@ public class main extends JPanel{
 			txtOutput2.setText("" + geefWaardeAan2.getWaarde());
 			txtStand.setText("Stand: " + txtOutput.getText() + "-" + txtOutput2.getText() );
 			
+			Array list = new Array();
+			list.voegtoe("Ploeg 2 Scoort");
+			list.show();
 		}		
 	}
 	
@@ -108,6 +111,10 @@ public class main extends JPanel{
 			geefWaardeAan.verlaag();
 			txtOutput.setText("" + geefWaardeAan.getWaarde());
 			txtStand.setText("Stand: " + txtOutput.getText() + "-" + txtOutput2.getText() );
+			
+			Array list = new Array();
+			list.voegtoe("Foutje Ploeg 1 verminderd");
+			list.show();
 		}		
 	}
 	
@@ -119,6 +126,10 @@ public class main extends JPanel{
 			geefWaardeAan.verlaag();
 			txtOutput.setText("" + geefWaardeAan.getWaarde());
 			txtStand.setText("Stand: " + txtOutput.getText() + "-" + txtOutput2.getText() );
+			
+			Array list = new Array();
+			list.voegtoe("Foutje ploeg 2 verminderd");
+			list.show();
 		}		
 	}
 	
