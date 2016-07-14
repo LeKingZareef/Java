@@ -25,7 +25,11 @@ public class person {
 	}
 	public boolean equals(Object p)
 	{
+<<<<<<< HEAD
 		//return name.equals(p.name);
+=======
+		return name.equals(p.equals(name));
+>>>>>>> e22e7c34fadbd3dcae144fb9181b2bd4416d2ba3
 	}
 
 }
