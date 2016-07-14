@@ -4,11 +4,15 @@ public class Customer {
 	public String name;
 	public int contactnummer; 
 	public String adres; 
+	public double product;
+	public double openrekening;
 	
-	public void Customer( String name, int contactnummer, String adres){
+	public void Customer( String name, int contactnummer, String adres, double product){
 		this.name = name;
 		this.contactnummer = contactnummer; 
 		this.adres = adres;
+		this.product = product;
+		this.openrekening = openrekening;
 	}
 
 	public String getName() {
@@ -35,11 +39,19 @@ public class Customer {
 		this.adres = adres;
 	}
 	
-	public void besteling (){
-		System.out.println("Bestelling auto is geplaatst");
+	public void besteling (){ 
+		System.out.println("Totaal bedrag bestelling: SRD" + product);
 	}
 	public void openrekening (){
+		if (product == 0){
+		
+			System.out.println("U heeft geen open rekeningen");
+		
+		} else {
+			
 		System.out.println("De rekening van uw auto staat nog open");
+		
+		}
 	}
 	
 }
